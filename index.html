@@ -1,0 +1,559 @@
+<title>tripleS Fan Hub</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAIAAAAErfB6AAAYM0lEQVR42u1deVhVZf5/7yog670CsiiipYSAC2YaMhTqKP5cipwUXJrRQWcsa6ansdF81CzH1GbI0lGnbPEpSXPMcYkoFUREARMXRIQBWRQv20W2y93OeX9/fPKd+0DS1RAO+n7+8Ln33HMOPudzvt/3u7+EcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwSAsy/gju8cHZgB2klIqiSCnlz6cH86pQKBQKRQfnKJVKuVzOJbiHQS6Xy2QyQRDwVa1WBwcHDx06tH///g4ODiaTqaampqCgIDc3t7m5GeeLosifW8+glkmkVqtduHDhoUOHysvLGxsbW1paoJMZrl279tZbb3l4eOBC/vR6gELG51GjRn3++ec6nS4vLy8xMTEmJiYwMFCj0Xh5eY1+fPTatWt1Oh2j+fLly4899hjnWOqCiw+hoaGHDh0yGo0HDhx46qmn7nT+wIEDc3JyKKWtra2U0sLCQk9PT0i/rSHGIQkolUpCiJOT0zvvvEMp/eHsD6NHj2ZirVQqFQoFmJPJZHK5XK1WE0L69+9fVVUliqLRaKSUrl+/HrfiBEuR3dDQUEjkhg0b2PEO7GdwvHz5ckqp2WwWRbGkpKR3795cUUuR3ZiYmJqaGkrpggULwJBCoWjj9bYBThg6dKjZbMZKbLVaw8LCOMGSYzc2NhbraEJCAiFEpVLZo2Nxjqur6/Xr18EupXT8+PHgnj/b7gdomDBhgsFgoJRu2rTJfnYZwQ4ODlevXmUEjxs3jhMsIZv5kUceqaqqopRmZ2Wr1WpoXft9KkKIs7Nz6bVSqOiWlpbAwECuoqXi76pUqrS0NJhIERERdyt5YHHQoEEGg0EURVEUz507x01oCSnnP/3pT8gWfPXVV/egV8Hls88+SymFm7Ru3Tq2rnN0c17I29u7pqZGFEWr1RoZGWkbw7qrt+TTTz+llFoslpaWlsGDB3P9LBXxXbNmDRbOs2fPQhbvSrUi6NG3b1+9Xi8IAqV0+/bt3LyShPgSQlxcXEpLS0HM6tWr70Gv4vzVq1fDfq6urvb390eQiz/k7hffGTNmQK+KohgZGXkP5pVMJuvXr19tbS28o7lz53LxlRDBO3bsgN1bWVmp0WiYZN+V+O7btw9K/oMPPuDsEklFry5evAhuTp06dW/svvzyy7jD/v37UdHBvSOpBDf69+/f1NSEvH1SUtJdCR/YjY6ORmjz4MGDDg4OfOmVln5+8sknsQBTSjdv3my/hYXLAwMDK29UUkp37drVq1cvqflF/EUjffv2JYSgfgrlVHbKriAIWq32myPf+Pj6rFq1av78+SaTSSaTSaoUS8l9JFdXV0IIal3t4QYxEKvV6uXllZ6e7urqOmXKlOTkZIVCgUCYtJYhLsGEtk3ad8wuPN1x48ZlZmaeP38+LCwsOTkZAi3BMkoeJiWCKLDP8JE6Zlej0cyZMycyMnLp0qXJycmEEJVKZbFYJOojPNSiSykhpKGhgVlG/v7+d1LU0OdarfZ3v/tdfn4+c3Yh0FxOpGtFjx07llKKOOXVq1ehpVk1HSuLBMEs/y+Xy3kqsGf4wf369WtuboZ9ZDKZgoOD79R7AlIVCgXLRkifYOXDnCKEitbpdGVlZcHBwVarVa1WjxkzJj8/X6FQaDQaV1fXXr16UUqbm5tv3bqFTD5zkxDd5ARLUTNDIeOzxWK5cOFCcHAwfl28ePGwYcOeeOIJX19fd3f3Xr16yWQyo9Go1+tLiktyzuakpaadyjzV2NjIdADvQZKQ4IISFxeX8PBwV1dXrLgowwDr7WE2m80ms+2RxsbGTz75hJXC31XpFpfg+y64c+bMefTRR/fs2WMymcxms6ura1RUFKQQ/NXX16empmZlZRUUFFRWVjY0NFitVrlc7ubm5uXlNWTwkCfGPBEdHT137twTJ06sXr0aKQqO7i941mq1hw4d2rFjh4uLC45PnDgxPz+fiSbegCtXrtijDMLCwt5+6+2MjIz169e7ubn1CJvrQXaHwsLCrl+/vnXrVubULlu2DPl5SmlNdY3FbGH1zC+88IJCoejVq5fcBrCf1Wq1bTZCLpfPnDlz4MCBd5tn5OhMdseMGWMwGD7++GNW/rh1y1asr5TSvXv3BgQE5ObmiqKIIxcuXIDLeyfOsJzziklJsDt8+PDm5ub09HSZTAbaPvroI0qpodVAKX333XdxckJCAiQYivr555+3MzcsZSPrwR+64OfnV3qtVF+n9/PzAw3vvvsu2g5Y5yDCF7179y4qKhJFEbnhc+fOqdVqXpsh9Wkp3333HaU0Pj4ex3//+99TStF9BI2NTl8o25deeslWiGfNmsWrqyStnF9//XVK6bfffouDw4cPb2lpgYCePHnSVkCx3Lq4uBQXF0OIRVHMzs62v/mMo6uDzEOHDm1ubjYZTWPHjpXJZGq1+syZMxDQ2traAQMGtCmvsS2fY0I8Y8YMLsQSJfjgwYOUUjQaEUKWLl1KKTWZTPCC2tdeQYjd3NwqKirYSnz82HFeRCfRNl+QFBUVhdYjnU4HHzclJeVOQqlSqQghf/3rXyHEoihaLdbw8HDeYiQ54zklJYVSejL9JCod16xeg9JJk8kEwn6SYFzr7e1dW1vLvOTExETeJCgVqFQqhUIxduxYKFi0kHh4eDDx3b17d8dsgfgtW7YwfV5YWOjo6MgDVd3vFDEC/vWvf1FKa2trx48fHx4e/re//Q0qt7GxEbZVB+MkcZ9Ro0ZBRQNPPvkkN7W6fxgdISQoKOiVV15hPZwM4MlqtW7atGnkiJG2XLaXS9zz7NmzTIiXL1/OtXQ3UMueuEajSUhISE1NZXRSSo8cOfLnP/953bp1LKNwKuMUqnNSUlIglD9pIeO2a9euZb36Bw4c4HZWN5jKhBAfH59Vq1aVlv449+TkyZN5eXmiKBoMBmjj1157DT9dv37dwdHB3d192bJlOLJhwwaYzW2Yw82feuop1tJSUFCAM/ky3HXsOjg4vPbaa+Xl5WDr2LFjkydPdnR0vHTpEqU0KytLpVKpVKqsM1k4YefOnYzLkSNHVlZWUkr/85//ODk5tZkoiQ8ajaa6upqVcPTr148LcdfV3PzqV7/Kzs7G0y+8WhgfHw9WRo8ejdV327ZthJBBgwY1NTXhyHPPPYd4loODAyFk0qRJWF+TkpLa2GiM44yMDFQBiKI4YsQITnAXjX994403wA2I7NOnDyEEY61efPFFHF+4cCEhJG52HJbkxsZGFLWDOayyycnJ4P63v/1tGxsKSmLnRzuZNxwdHc0N6fuult3c3P7973+DwurqaqRswQ3WyB07dlBKLWbLqFGjCCGbNm3CyadPn7Y1mJHzX7JkCei/cuUK+nptTyC3Z27gZYqJiemJBMt7UL1cv379jh49GhsbSwi5ePHi008/vXfvXqRyBUHAsH2M4a6qqiopKSGEDBs2DHfIzc2llDIdANYLCgoIIYIgBAUFob+hjQa+efMmE/oeutWGvKewO3DgwO+//x5ymZaWFh0dffnyZZVKhbQPunJdXV0DAgIIIRUVFXq93tHREaVSILi9Ddza2koIgU+FJZadADpt24XZbg09C0rpr7uCIPj4+Bw5cmTIkCGEkNTU1BkzZjQ1NbXv6fPy8tJqtISQ0rJSQoivr69PXx/8dPXqVVspBJE+Pj6EEJGKMpnMy8ur/V9HVxnEGj1qPU6O5dJv0HZyctq7Z29QUBAEMTY2Fuza9vQxwpx6OxFCrl27BoLx1WAwlJeXt6cHUov+YHQq/OR/QC6Xt7a26vV6LsGdr5ytVmtiYuK4yHEWs6X+Vv1vfvObW7du4Xh7YfLx8QElFRUV5HYvKCFEr9eDHnaJKIpKpXLq/01ldlNhYWH7NwAOlUwmq62t1el0XII7n92ZM2cuWrTIbDar1Ko//vGPxcXFKpWKdRa1b97F18rKSkKIt7c3IxirKetHEkVxXOS4YcOHCYKgVCqbm5uzs7Pb63BPT098LS4ubm5uZv1qnOBOWHoppZ6enu+9954oimq1+vPPP8cIKqvVeqd4IfiglNbU1NjyXV9fL4pim6veWPGGTCbD3VJSUsrLy223sgKRiF4RQs6dO9dDnWC5ZFdfURRXrlzp5+eHZqEVK1b8rABhnIrRaMSCit2pCCG3bt2yDXEIghAXFzdhwgSIryAIf//739vY2PhDjz76KL6mp6f3UE9JLk3xFUVx8ODBCQkJVqtVoVBs3769oqKCdY+1f9A4guINo9EIhYwVlLlDCHNarVZ/f/9//OMfiEEqFIoPP/zw9OnTuLnt6+Xo6Ai7vbqqOiMjo4e2icqlKb6U0qVLlzo6Osrl8qamph07dtgzf8rZ2ZkQYjKZjEYjzG9bFxbejlqt/uyzz/r27WuxWNRq9fnz519//fU2+wxClIOCgqCij6cer6urwzgOTnAnsCsIgre3d1xcnCiKcrk8OTm5rKzMnr0eEV80mUwmk4ncrqCD5OH9EEXx448/jo6ONhqNarW6srJy1qxZ0Oe25LF8Bu7wxRdf9NxEoVyaMeepU6dqtVp4ul9//fVddWZaLJY2Y29UKhXCkLt27ZozZ05ra6uDg8PNmzenTp1aWFiIX23Px5s0ZcoUSunFixe///57231HOcG/CHi406dPp5SqVCqDwZCVlWXnBDkW2MLbwCgxmUweHh6HDx+eN2+e0Wh0dHS8cuXKxIkTc3NzYWS1N+CHDBkSEREhk8n++c9/mkwmHCQcnRK68vDwuHnzJoypixcvQvF2LMGQ+/fffx9FkK6urnK5/JNPPsGbcenSJQwMRth5//79cKh+skgDt0K9Tl5enrOzM+8/62T9HBkZyWpl9u3bZ0+aHS/B+vXrKaVFRUXwgNFFiPsAOp1u8eLFbYp+2jc3aLXaiooK1kHao2vtlBKUYAy8gZNqm7DruMxDqVTW19fDWWpqavL19UX4GgZUQ0PDrl27Nm3adP36dUSyfnJNRW5j0aJF/v7+hw8f3rdvn637xNE5kzTefvtttgvv2rVr7Zeh2NhYSmldXd1XX32Fy6GT6+rqWGK4g/F0tlsv1NfXDxo06AGo0VFKcHgkMnd2LntyuTwgIOCRRx4ZNWoUTDMPd4+ZM2fm5OTo9fqJEyeiq7+qqgpVVx2II8IgGzdu1Gq1c+fOLS4ufgDEV4qvJ/pEANRbdbxsx8bGPv/884GBgZcuXbKYLURGJk6cOHr06DfffBPes4uLS2BgoG0p/E8qD6vVOm/evNmzZ3/wwQdffPFFewObo3OMrJ07d7KK84MHD3asJ9sIOgqksTVOWFiY2Wxms7E6UPX4uyEhIYIgfPPNNxgN8GAUUMolaGQh84rPQ4cOdXBwaJ8LstXqsLDQro8yK19fX0LIzZs39Xo9awa/k9qHHvb09Pzuu+9++OGH2bNnY+V+MBxfKb6kqJdDbGHAgAEhISEdt2Cj6QiRSBRL+/n5EUL0ej0y/4QQFHO1V7lg183NLT09vaqqavLkyY2NjfjTnOD7FcbKzc1FnkcQBLlc/uwzz1JK7bS5Tpw4IZPJYAALgoA6DUJIaGiou7t7G02AVdbb2zs7O7uuri4qKgoSz4eL3l8VrVar0V+EGEVFRYVGo/nZcBJ+7d27t16vP3HiBA6uWLGCVa5HRUWx5ZY1roWHh+t0ut27d+M4b1zo0r1ArVYraq9WrVpFbLJDHV/72WefoWaWEDJ16lRWub5mzRrchJlaS5Ysqa+vX7Zs2Z3aDDnu425kDbcahNtoamoaOXLkz0Y8QHBERARq2QkhAQEBjY2NMJoyMzNZA5K/v//Bgwfz8/PHjh3bcfSD434J8Rsr3kAkme2mANu4Y47xfmSeykRvkkKhyMnJQfGG0Wjs37+/TCZbvnx5SUlJYmIihkXztu7uadpXq9Vo6Ga+7KVLl1BD08GGGHg5pk+f/uGHH8Kd3br1f0NH9+zZk5mZmZyc/GNFNG8m615F7e3tfeHCBcgxDK7q6mp0AjJ6lLfBPqMt+LnnnsM5kydPZjORKKVxcXF8gqiEOPby8kpOToZXylpG09LSZs+ezapi74SRI0euWbMG/eBIH1kslkmTJsnl8p+11x4cdShxjlGW9corryxbtgy7SDKfuKKiIisrKzc3t6ioqK6urrW11cnJydPT87HHHgsPDx8xYoSLi0thYeGnn34aGxv79NNPm81mtVr95ZdfxsXF8SSgtPa/IYT4+Pj85S9/OXPmDGLUHaC2tvbw4cMvvvgiwh2EkMWLF7PMf3V19V1lq7gEd10HKbk9KCkkJCQoKMjf39/Z2VmlUpnNZkQlS0pK8vPzi4uLWXEWbKiAgIC8vDxHR0er1apUKuPj45OSkpA+4iIkxaFJ9rwQbNQZ/j169ChWcVEUv/zySx60kvTC3MZ4xleEqNpHNPFavPrqq8xZ0t3UYZdRbkX3jOXZHmt8+PDhP06PtVoppc8888xD4gTLe+6sfju7wXBOfn5+UVERK9mZNGnSQyLB8h5HLeKOiG3ZwxClVKFQmM3mM2fOsIORkZFtZgRwgrvfkAa1KpUqKipq165d8+bNA3l2ZiHR4g2NPXjwYLSGclNLQvPP3N3dX375ZQxEMhgMkyZNajNq9mezTAhpYRmeP38+zzRIJbMkk8kWL1r83//+F6GMpKQkRLXslD+c5uvrW19fz2xp7HHHkw3dz25ISMjx48dBbWtr60svvdRGsu0vFMm/ks8IPnr0KFfR3T90dP78+Q0NDVh99Xr9lClTOp7X3rEQp6enM4KLioowEYB7w93G7ptr3mSrpr5OP27cOELIve1UBWVw4MABFpSur6+HnucEd8+I/sTEREgb9lpALfs970MGY2r37t2MYLPZjLIerqVJ1/efrVu3DhygZGf69OlYRO9Z4NoTLAhCSEgIJ7gbrKqFCxbaVnGsWLHCnpJKe+58+PBhTnA3+7sjRoxobm62Wq2gISUlBXmkX7hSInCNvgf4wYIghIaGcoK71LBSq9XYYsFkMgmC0NDQ0ClNung53NzcsE8DwpwGgwHDhjnBXaecMYLdYv5ROa9cubJTYhE/6obhI5jsUkorKyvd3d25Fd11iT+NRsO2/RRF8VrJNcxS+eUEQMP/4Q9/sN03Njs7+66mM/Fkwy9NJMTFxfn7+6M/TCaTvbf5vcbGxk4Z8IqCWQRJ2Ne8S3ntZ/hz3C/zSi6Xnz59mjWc6W7qtH20nSJh0AEBAQFNTU22yYb2O61w3N/dus1mMyN4+/btnZUJAIW2WwJj6A7f6KpLIxsJCQm2nUiTJ0+2MxVoj3Hu5uZWWlrKat8xC42z26X2M4bUIQ1QV1fXWaXLbcSXmdC//vWvea6wS1X0119/zZpTTp061Ymr74ABA+rq6rA9HThOS0vDqv9QPF6J/D969+5NbhfIlZWVdYp9i1Eb77//vkajgXFOCRUEYeXKlR1MdeEE38fhDcRmQPsvV85Wq/XVV1+dNm0aGhqsVqtSody2bVtGRgafgdXVKnr//v1sNlZSUtIvdGBwbUxMDLKNgiBAOZ8/f97FxeXh0c8SsqI3btwoiiLW4LNnz2L5vDctirxTREREQ0MDLGewW1tbi50NuW3VDVY05ojCTzUajcHBwffgJrH+pfHjx9fW1sJmBrsGg2HC+Ak8stFtq69Wq9XpdKIowlPavHnz3eaAGXMvvPCCwWCwHdLT0tLCirkehvizRIV448aNbCJHa2trRESEPRzbbt7t7u6+ZcsW1F+ymMaNGzcwIYvLbjdnk7y9vZGvhRCXl5cjIQ/Fy1ZlAD2Gtjp81qxZBQUFjFqEJNPT05FRvudiLo5O3mwFZhE4rqmpmT9/fsfEuLm5xcfHZ2RkQHCNRiNiVSaT6a21b0EB2LPrA0cXcbxgwQIIHxu5kpmZuWTJktDQUFdXV5VKpVarPTw8QkND4+Pjd+7cWVZa9iO1JiPbnuHbb799/PHH77Y+nqOLXKaYmJhr166BKogyPpSVlV2+fDk/P//GjRu2W22wcyilx44dmzZtGvOXOLsSlWNvb+8N72yoqqqi9qG0tHTbtm2wy9gUAP4wJTqEhY1c8fb2njZtWkxMzLBhw3x9fW1H/RsMhpqamqKiopycnNTU1DNnzjQ1NbH8IA9DSn3KThueHBwc/Pz8+vTp4+zsLJPJGhsba2trq6qqWlpabNU7TGhOao8Zo8SalO5EG6LKbPscTmdPnZPF3F9iM5jhgZm6z8HBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBcdf4f1+m7ZPGVbsEAAAAAElFTkSuQmCC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky top bar with a Fan App / Game Hub switch, a scrolling sub-nav, then one view at a time. A 24-color spectrum strip is the recurring motif. */
+:root{
+  --bg:#F5F4F8;--surface:#FFFFFF;--surface2:#ECEAF2;--fg:#17151F;--muted:#625F72;--line:#D9D6E3;
+  --accent:#1F5BFF;--accent-fg:#FFFFFF;--good:#17824C;--bad:#C23A3A;--warn:#B77700;
+  --font-d:'Bricolage Grotesque',system-ui,sans-serif;--font-b:'DM Sans',system-ui,sans-serif;--font-m:'DM Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#13121B;--surface:#1C1B27;--surface2:#262434;--fg:#F0EEF8;--muted:#A5A2B8;--line:#34324A;
+  --accent:#7BA0FF;--accent-fg:#0C1030;--good:#4CC585;--bad:#F07A7A;--warn:#E6B04A;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#13121B;--surface:#1C1B27;--surface2:#262434;--fg:#F0EEF8;--muted:#A5A2B8;--line:#34324A;
+  --accent:#7BA0FF;--accent-fg:#0C1030;--good:#4CC585;--bad:#F07A7A;--warn:#E6B04A;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-b);font-size:16px;line-height:1.5;padding-block:0 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+h1,h2,h3{font-family:var(--font-d);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,6vw,3.4rem);font-weight:800}
+h2{font-size:clamp(1.4rem,3.4vw,2rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1100px;margin-inline:auto}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-block:10px 0}
+.top .row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-d);font-weight:800;font-size:1.15rem}
+.spec{display:inline-flex;height:18px;width:72px;border-radius:3px;overflow:hidden;flex:none}
+.spec i{flex:1}
+.seg{display:flex;background:var(--surface2);border-radius:999px;padding:3px}
+.seg a{padding:6px 16px;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:700;font-size:.9rem}
+.seg a.on{background:var(--accent);color:var(--accent-fg)}
+.sub{display:flex;gap:2px;overflow-x:auto;padding-block:8px 0;scrollbar-width:thin}
+.sub a{flex:none;padding:8px 12px;text-decoration:none;color:var(--muted);font-weight:500;font-size:.92rem;border-bottom:3px solid transparent}
+.sub a.on{color:var(--fg);border-bottom-color:var(--accent);font-weight:700}
+main{padding-block:28px}
+.page-head{display:grid;gap:10px;margin-bottom:24px;max-width:70ch}
+.page-head p{color:var(--muted)}
+.eyebrow{font-family:var(--font-m);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.card.flat{background:transparent}
+.stack{display:grid;gap:12px}
+.cols{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.av{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-family:var(--font-d);font-weight:800;object-fit:cover;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.14)}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:.8rem;background:var(--surface2);white-space:nowrap}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.mono{font-family:var(--font-m)}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 16px;font-weight:700}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:transparent}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:500}
+.chip.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+input[type=search],input[type=text]{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 12px;min-width:0;width:100%}
+.hero{display:grid;gap:18px;padding-block:8px 28px}
+.hero .lead{font-size:1.15rem;max-width:56ch;color:var(--muted)}
+.bigspec{display:flex;height:44px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.bigspec i{flex:1}
+.tl{display:grid;gap:14px}
+.tl .it{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:start}
+.tl .when{font-family:var(--font-m);font-size:.8rem;color:var(--muted);padding-top:4px}
+@media (max-width:560px){.tl .it{grid-template-columns:1fr;gap:4px}}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);font-size:.92rem;vertical-align:top}
+th{font-family:var(--font-m);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+ol.tracks{margin:8px 0 0;padding-left:1.4em;columns:2 200px;font-size:.92rem}
+.avs{display:flex;flex-wrap:wrap;gap:6px}
+.note{border-left:3px solid var(--line);padding:4px 0 4px 12px;color:var(--muted);font-size:.88rem}
+/* games */
+.gcard{display:grid;gap:8px;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s}
+.gcard:hover{transform:translateY(-2px);border-color:var(--accent)}
+.gcard .ico{height:56px;border-radius:10px;display:flex;overflow:hidden}
+.gcard .ico i{flex:1}
+.scorebar{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:14px}
+.opts{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));margin-top:14px}
+.opt{border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:12px 14px;text-align:left;font-weight:500}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.ok{border-color:var(--good);background:color-mix(in srgb,var(--good) 16%,var(--surface))}
+.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 14%,var(--surface))}
+.opt:disabled{cursor:default}
+.prompt{font-family:var(--font-d);font-size:clamp(1.2rem,3vw,1.6rem);font-weight:700;line-height:1.25}
+.media{margin-top:14px;display:flex;justify-content:center}
+.frame{width:min(100%,520px);aspect-ratio:16/9;border-radius:12px;border:1px solid var(--line);display:flex;align-items:flex-end;padding:10px;font-family:var(--font-m);font-size:.72rem;color:#fff;overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.swatch{width:min(100%,260px);aspect-ratio:1;border-radius:20px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.fb{margin-top:14px;padding:10px 14px;border-radius:10px;background:var(--surface2);font-size:.95rem}
+.board{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;width:min(100%,460px);margin-inline:auto}
+.tile{aspect-ratio:1;border-radius:10px;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:800;font-size:clamp(1rem,4.6vw,1.5rem);line-height:1;box-shadow:inset 0 0 0 1px rgba(0,0,0,.14);min-width:0}
+.tile small{font-family:var(--font-b);font-weight:500;font-size:clamp(.5rem,2vw,.68rem);margin-top:3px;opacity:.85}
+.tile.blank{background:var(--surface2);box-shadow:none;cursor:default}
+.slots{display:flex;gap:8px;flex-wrap:wrap}
+.slot{width:62px;height:62px;border-radius:12px;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;background:var(--surface);padding:0}
+.slot.f{border-style:solid}
+.cand{display:flex;flex-direction:column;align-items:center;gap:4px;border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 6px;width:78px;font-size:.72rem}
+.cand:disabled{opacity:.35}
+.hist{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.pegs{display:grid;grid-template-columns:repeat(2,14px);gap:4px;margin-left:auto}
+.peg{width:14px;height:14px;border-radius:50%;border:2px solid var(--line)}
+.peg.b{background:var(--fg);border-color:var(--fg)}
+.peg.w{background:var(--surface);border-color:var(--fg)}
+.wall{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(54px,1fr))}
+.wall button{border:0;background:none;padding:0;border-radius:50%;aspect-ratio:1;display:flex}
+.wall button .av{width:100%;height:100%;font-size:clamp(.8rem,3vw,1.05rem)}
+.wall button.bad{animation:shk .25s}
+@keyframes shk{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media (prefers-reduced-motion:reduce){.wall button.bad{animation:none}.gcard{transition:none}}
+.timer{font-family:var(--font-m);font-size:1.6rem;font-weight:500}
+.timer.low{color:var(--bad)}
+.clue{padding:12px 14px;border-radius:10px;background:var(--surface2);display:flex;gap:10px;align-items:center}
+.clue b{font-family:var(--font-m);font-size:.75rem;color:var(--muted);flex:none}
+.shelf{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr))}
+.shelf .card{padding:12px;display:grid;gap:8px;justify-items:center;text-align:center}
+.shelf .sw{width:100%;aspect-ratio:1.6;border-radius:10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.14)}
+.up{display:grid;gap:8px;justify-items:center;text-align:center;font-size:.82rem}
+.up input{max-width:100%;font-size:.75rem}
+#modal{position:fixed;inset:0;z-index:50;background:rgba(8,8,14,.82);display:flex;align-items:center;justify-content:center;padding:16px}
+#modal[hidden]{display:none}
+#modal .box{width:min(100%,900px);display:grid;gap:10px;color:#fff}
+#modal .vid{aspect-ratio:16/9;width:100%;background:#000;border-radius:12px;overflow:hidden}
+#modal iframe{width:100%;height:100%;border:0;display:block}
+#modal .bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+#modal a{color:#fff}
+#modal .btn{color:var(--fg)}
+.logo{width:38px;height:38px;border-radius:10px;flex:none;display:block}
+.herologo{width:clamp(84px,18vw,128px);height:auto;border-radius:20px;display:block}
+footer{max-width:1100px;margin:40px auto 0;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:16px}
+</style>
+
+<div class="top"><div class="wrap">
+  <div class="row">
+    <div class="brand"><img class="logo" src="data:image/png;base64,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" alt="tripleS Fan Hub logo"><span>tripleS Fan Hub</span><span class="spec" id="spec" aria-hidden="true"></span></div>
+    <div class="seg" role="tablist"><a href="#home" id="segFan">Fan App</a><a href="#games" id="segGames">Game Hub</a></div>
+  </div>
+  <nav class="sub" id="sub" aria-label="Sections"></nav>
+</div></div>
+<main class="wrap" id="view"></main>
+<div id="modal" hidden></div>
+<footer>Unofficial fan project, not affiliated with MODHAUS or tripleS. Facts come from public news and fan wikis as of November 17, 2026 and can contain errors. Member colors and positions differ between fan wikis; this hub uses the most commonly listed values.</footer>
+
+<script>
+"use strict";
+/* ---------- helpers ---------- */
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const rnd=a=>a[Math.floor(Math.random()*a.length)];
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}};
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fd=s=>{const p=s.split('-').map(Number);return p.length===3?`${MON[p[1]-1]} ${p[2]}, ${p[0]}`:`${MON[p[1]-1]} ${p[0]}`};
+const lum=c=>{const r=parseInt(c.slice(1,3),16),g=parseInt(c.slice(3,5),16),b=parseInt(c.slice(5,7),16);return(.299*r+.587*g+.114*b)/255};
+const ink=c=>lum(c)>.62?'#17151F':'#FFFFFF';
+let TM=null;const stopTimer=()=>{if(TM){clearInterval(TM);TM=null}};
+
+/* ---------- data ---------- */
+// n, name, full name, birthday, nationality, color name, hex, msnz unit, leads unit
+const RAW=[
+[1,'SeoYeon','Yoon SeoYeon','2003-08-06','Korean','Dodger Blue','#1E90FF','neptune',1],
+[2,'HyeRin','Jeong HyeRin','2007-04-12','Korean','Electric Violet','#8F00FF','sun',0],
+[3,'JiWoo','Lee JiWoo','2005-10-24','Korean','Lemon Yellow','#FFF44F','zenith',0],
+[4,'ChaeYeon','Kim ChaeYeon','2004-12-04','Korean','Atlantis Green','#2BB673','sun',0],
+[5,'YooYeon','Kim YooYeon','2001-02-09','Korean','Opera Pink','#E8789C','sun',0],
+[6,'SooMin','Kim SooMin','2007-10-03','Korean','Tickle Me Pink','#FC89AC','zenith',0],
+[7,'NaKyoung','Kim NaKyoung','2002-10-13','Korean','Cadet Blue','#5F9EA0','neptune',0],
+[8,'YuBin','Gong YuBin','2005-02-03','Korean','Misty Rose','#FFE4E1','zenith',0],
+[9,'Kaede','Kaede','2005-12-20','Japanese','Sunglow Yellow','#FFCC33','moon',0],
+[10,'DaHyun','Seo DaHyun','2003-01-08','Korean','Lavender Rose','#FBA0E3','neptune',0],
+[11,'Kotone','Kotone','2004-03-10','Japanese','Golden Yellow','#FFDF00','neptune',0],
+[12,'YeonJi','Kwak YeonJi','2008-01-08','Korean','Royal Blue','#4169E1','zenith',0],
+[13,'Nien','Nien','2003-06-02','Taiwanese-Vietnamese','Neon Carrot','#FFA343','neptune',0],
+[14,'SoHyun','Park SoHyun','2002-10-13','Korean','Egyptian Blue','#1034A6','moon',0],
+[15,'Xinyu','Xinyu','2002-05-25','Chinese','Venetian Red','#C80815','sun',1],
+[16,'Mayu','Mayu','2002-05-12','Japanese','Vivid Tangerine','#FF9980','sun',0],
+[17,'Lynn','Lynn','2006-04-12','Japanese','Deep Lilac','#9955BB','moon',0],
+[18,'JooBin','JooBin','2009-01-16','Korean','Conifer Green','#ACDD4D','zenith',0],
+[19,'HaYeon','Jeong HaYeon','2007-08-01','Korean','Seafoam Blue','#6FD3C0','zenith',1],
+[20,'ShiOn','Park ShiOn','2006-04-03','Korean','French Rose','#F64A8A','moon',0],
+[21,'ChaeWon','Kim ChaeWon','2007-05-02','Korean','Light Wisteria','#C9A0DC','sun',0],
+[22,'Sullin','Sullin','2006-11-30','Thai','Dark Sea Green','#8FBC8F','moon',1],
+[23,'SeoAh','SeoAh',null,'Korean','Pale Sky Blue','#A8D8F0','neptune',0],
+[24,'JiYeon','JiYeon','2004-02-13','Korean','Rajah Orange','#FBAB60','moon',0]];
+const iniOf=n=>{const c=n.match(/[A-Z]/g)||[];return c.length>1?c.join(''):n.slice(0,2)};
+const M=RAW.map(r=>({n:r[0],name:r[1],full:r[2],bd:r[3],nat:r[4],cn:r[5],c:r[6],unit:r[7],lead:!!r[8],ini:iniOf(r[1])}));
+const MB=n=>M[n-1];
+const UN=[
+ {id:'moon',name:'Moon',track:'Cameo Love',col:'#7A86D8'},
+ {id:'sun',name:'Sun',track:'Bubble Gum Girl',col:'#F2A93B'},
+ {id:'neptune',name:'Neptune',track:'Fly Up',col:'#2F8FE0'},
+ {id:'zenith',name:'Zenith',track:'Q&A',col:'#2EB89A'}];
+const unitOf=m=>UN.find(u=>u.id===m.unit);
+const OLD=[
+ {name:'Acid Angel from Asia',date:'2022-10-28',rel:'ACCESS',track:'Generation',mem:[2,5,7,8],st:'Inactive'},
+ {name:'+(KR)ystal Eyes',date:'2023-05-04',rel:'AESTHETIC',track:'Cherry Talk',mem:[1,3,4,6],st:'Inactive'},
+ {name:'ACID EYES',date:'2023-07-06',rel:'Cherry Gene (remix single)',track:'Combined Acid Angel from Asia + +(KR)ystal Eyes',mem:[2,5,7,8,1,3,4,6],st:'Inactive'},
+ {name:'LOVElution',date:'2023-08',rel:'MUHAN',track:"Girls' Capitalism",mem:[],st:'Inactive (2023 to 2024)'},
+ {name:'EVOLution',date:'2023-10-11',rel:'MUJUK',track:'Invincible',mem:[5,16,7,11,4,3,6,12],st:'Inactive'},
+ {name:'NXT',date:'2023-12-23',rel:'Just Do It (digital single)',track:'Not promoted',mem:[17,18,19,20],st:'Inactive'},
+ {name:'Aria',date:'2024-01-15',rel:'Structure of Sadness',track:'Door',mem:[10,13,4,3,9],st:'Inactive'},
+ {name:'Glow',date:'2024-06-21',rel:'Inner Dance',track:'Not promoted',mem:[21,22,23,24],st:'Inactive'},
+ {name:'Visionary Vision',date:'2024-10-23',rel:'Performante',track:'Hit the Floor',mem:[2,5,7,8,9,11,12,13,14,15,17,24],st:'Active'},
+ {name:'∞! (Hatchi)',date:'2024-11-20',rel:'Untitled (Japanese single album)',track:'Untitled',mem:[16,20,21,4,5,6],st:'Active'},
+ {name:'Alphie',date:'2025',rel:'Promotional unit for the @% (Alpha Percent) world tour',track:'Promotional only',mem:[5,24,11,20,17,21,19,13],st:'Promotional'}];
+const ERAS=[
+ {id:'a24',name:'ASSEMBLE24',date:'2024-05-08',lead:'Girls Never Die',blurb:'The first album with all 24 members. It opened with 152,335 copies in its first week and peaked at number 3 on the Circle Album Chart.',songs:['S','Girls Never Die','Heart Raider','Midnight Flower','White Soul Sneakers','Chiyu','24','Beyond the Beyond','Non Scale','Dimension']},
+ {id:'a25',name:'ASSEMBLE25',date:'2025-05-12',lead:'Are You Alive',blurb:'The second full-group album and the first to open above 500,000 copies (516,626 in week one). SeoYeon was chosen as its leader.',songs:['@% (Alpha Percent)','Are You Alive','Detective Soseol','Firework Diary','Love Child','Persona','Too Hot','Diablo','Friend Zone','Love2Love']},
+ {id:'bb',name:'Beyond Beauty (msnz)',date:'2025-11-24',lead:'Fly Up, Cameo Love, Bubble Gum Girl, Q&A',blurb:'Four fan-voted units, Moon, Sun, Neptune and Zenith, debuted together with six members each. Each unit has its own lead track, and the EP topped 360,000 copies in its first week.',songs:['Magic Shine New Zone','Fly Up','Cameo Love','Bubble Gum Girl','Q&A','Christmas Alone']},
+ {id:'a26',name:'ASSEMBLE26 LOVE & POP Part 1: LOVE',date:'2026-06-01',lead:'Baby Flower',blurb:'Seven tracks about comfort and solidarity for girls who have not yet found their potential. SoHyun worked on the B-side Sleek. First-week sales were about 567,600, a career high.',songs:['Baby Flower','Sleek',"Sad Girls Schemin'"],partial:true},
+ {id:'a26b',name:'LOVE & POP pt.2 (single)',date:'2026-10-16',lead:'Andless',blurb:'The second part of the ASSEMBLE26 cycle arrived as a single. SoHyun called its repeating point choreography addictive.',songs:['Andless']}];
+const MV=[
+ {id:'generation',t:'Generation',d:'2022-10-28',u:'Acid Angel from Asia',era:'ACCESS',mem:[2,5,7,8]},
+ {id:'rising',t:'Rising',d:'2023-02-13',u:'tripleS (first ASSEMBLE)',era:'ASSEMBLE',mem:[1,2,3,4,5,6,7,8,9,10]},
+ {id:'cherrytalk',t:'Cherry Talk',d:'2023-05-04',u:'+(KR)ystal Eyes',era:'AESTHETIC',mem:[1,3,4,6]},
+ {id:'girlscap',t:"Girls' Capitalism",d:'2023-08',u:'LOVElution',era:'MUHAN',mem:[]},
+ {id:'invincible',t:'Invincible',d:'2023-10-11',u:'EVOLution',era:'MUJUK',mem:[5,16,7,11,4,3,6,12]},
+ {id:'door',t:'Door',d:'2024-01-15',u:'Aria',era:'Structure of Sadness',mem:[10,13,4,3,9]},
+ {id:'gnd',t:'Girls Never Die',d:'2024-05-08',u:'tripleS OT24',era:'ASSEMBLE24',mem:null},
+ {id:'htf',t:'Hit the Floor',d:'2024-10-23',u:'Visionary Vision',era:'Performante',mem:[2,5,7,8,9,11,12,13,14,15,17,24]},
+ {id:'untitled',t:'Untitled',d:'2024-11-20',u:'∞! (Hatchi)',era:'Untitled',mem:[16,20,21,4,5,6]},
+ {id:'ayalive',t:'Are You Alive',d:'2025-05-12',u:'tripleS OT24',era:'ASSEMBLE25',mem:null},
+ {id:'flyup',t:'Fly Up',d:'2025-11-24',u:'Neptune (msnz)',era:'Beyond Beauty',mem:M.filter(m=>m.unit==='neptune').map(m=>m.n)},
+ {id:'cameo',t:'Cameo Love',d:'2025-11-24',u:'Moon (msnz)',era:'Beyond Beauty',mem:M.filter(m=>m.unit==='moon').map(m=>m.n)},
+ {id:'bubble',t:'Bubble Gum Girl',d:'2025-11-24',u:'Sun (msnz)',era:'Beyond Beauty',mem:M.filter(m=>m.unit==='sun').map(m=>m.n)},
+ {id:'qa',t:'Q&A',d:'2025-11-24',u:'Zenith (msnz)',era:'Beyond Beauty',mem:M.filter(m=>m.unit==='zenith').map(m=>m.n)},
+ {id:'babyflower',t:'Baby Flower',d:'2026-06-01',u:'tripleS OT24',era:'ASSEMBLE26 LOVE & POP Part 1',mem:null},
+ {id:'andless',t:'Andless',d:'2026-10-16',u:'tripleS OT24',era:'LOVE & POP pt.2',mem:null}];
+const EMBED=true; // true in the self-hosted build: shows a Play button with YouTube's embedded player
+const YT={rising:'3TQd2ahq6oU',girlscap:'OvtoY0lfYJ8',invincible:'KMythzAnNK0',door:'PqKZctzEW1o',gnd:'2tda_TCjz8w',htf:'aKyt6Ahxwss',ayalive:'pTycfmVzdl8',flyup:'vpXtzSpyV_8',cameo:'With0YDpuWQ',bubble:'LfS0-022cq8',qa:'TvmLPQ7iBLQ',babyflower:'6q8UMVXhXsE'};
+const SHOWS=[
+ {d:'2026-06-10',show:'Show Champion',song:'Baby Flower',pts:'5,727',note:'First music show win of the ASSEMBLE26 era (counted as the group’s 5th career win by KProfiles).'},
+ {d:'2026-06-12',show:'Music Bank',song:'Baby Flower',pts:'7,990',note:'First win on a public broadcast music show (6th career win by KProfiles). Beat TREASURE’s “IF I”.'}];
+const PERF=[
+ {d:'2025-12-03',show:'Show Champion',what:'msnz performed Christmas Alone as a full unit stage.'},
+ {d:'2026-06-04',show:'2026 M Countdown Mega Concert',what:'First public performance of the ASSEMBLE26 LOVE & POP album, with Baby Flower.'},
+ {d:'2026-06-11',show:'M Countdown',what:'Full-group Baby Flower performance with point dances and the long high-note section.'},
+ {d:'2026-06-12',show:'Music Bank',what:'Baby Flower plus the B-side Sad Girls Schemin’, followed by the win.'}];
+const VAR=[
+ {d:'2026-11',show:'JTBC Morning&',who:'ChaeYeon',what:'Appeared as a “weather fairy” on the morning program, reported on Nov 4, 2026.'},
+ {d:'2026-08',show:'Badge War Season 4: Trust No One',who:'tripleS',what:'The group’s signature reality series with Wonder K released its first episode of season 4.'},
+ {d:'2026-08',show:'Band of Righteous Thieves Season 3',who:'NaKyoung, SooMin',what:'Joined the YouTube variety show as its new youngest members for a K-beauty mission at The Hyundai Seoul.'},
+ {d:'earlier',show:'Weekly Idol',who:'Members',what:'Episode 686 is often cited in fan profiles, including a YeonJi moment about buying things people tell her not to buy.'}];
+const NEWS=[
+ {d:'2026-11-11',t:'North American tour opens in Toronto.'},
+ {d:'2026-10-31',t:'Two-date world tour show “Andless in Tokyo” wraps in Japan.'},
+ {d:'2026-10-16',t:'Releases the single LOVE & POP pt.2, “Andless”.'},
+ {d:'2026-09-19',t:'Wins “Global Hot Trend” at The Fact Music Awards, the first awards show attended as all 24.'},
+ {d:'2026-06-12',t:'Baby Flower wins on Music Bank, the first win on a public broadcast show.'}];
+
+/* ---------- photos (stored only in this browser) ---------- */
+let PH=LS.get('sssPhotos',{});
+function av(m,s=56,cls=''){const p=PH['m'+m.n];
+ return p?`<img class="av ${cls}" style="width:${s}px;height:${s}px" src="${p}" alt="${esc(m.name)}">`
+ :`<span class="av ${cls}" style="width:${s}px;height:${s}px;background:${m.c};color:${ink(m.c)};font-size:${Math.round(s*.32)}px">${esc(m.ini)}</span>`}
+const unitPill=m=>{const u=unitOf(m);return `<span class="pill"><i class="dot" style="background:${u.col}"></i>${u.name}${m.lead?' leader':''}</span>`};
+const grad=ms=>{const cs=(ms&&ms.length?ms:M.map(m=>m.n)).map(n=>MB(n).c);const k=cs.length;return `linear-gradient(110deg,${cs.map((c,i)=>`${c} ${Math.round(i/k*100)}%,${c} ${Math.round((i+1)/k*100)}%`).join(',')})`};
+const specHTML=()=>M.map(m=>`<i style="background:${m.c}"></i>`).join('');
+
+/* ---------- fan pages ---------- */
+function pHome(){
+ const latest=ERAS[3];
+ return `<section class="hero">
+  <img class="herologo" src="data:image/png;base64,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" alt="Fan hub logo">
+  <span class="eyebrow">Fan App</span>
+  <h1>24 members.<br>One spectrum.</h1>
+  <p class="lead">Profiles, units, eras, music videos and stage history for tripleS, plus ten mini games to test how well you know S1 to S24.</p>
+  <div class="bigspec" aria-hidden="true">${specHTML()}</div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn primary" href="#members" style="text-decoration:none">Meet the members</a><a class="btn" href="#games" style="text-decoration:none">Open the Game Hub</a></div>
+ </section>
+ <div class="cols">
+  <div class="card stack"><span class="eyebrow">Current era</span><h2>${esc(latest.name)}</h2><p class="muted">${esc(latest.blurb)}</p><a href="#era-ot24">See every OT24 era</a></div>
+  <div class="card stack"><span class="eyebrow">Latest news</span>
+   <div class="stack">${NEWS.map(n=>`<div><span class="mono small muted">${fd(n.d)}</span><p>${esc(n.t)}</p></div>`).join('')}</div></div>
+ </div>
+ <h2 style="margin:32px 0 14px">Jump in</h2>
+ <div class="grid">${[['members','Members','Profiles for S1 to S24 with colors and units.'],['units','Units','msnz and every unit since Acid Angel from Asia.'],['era-ot24','Era OT24','ASSEMBLE24 through LOVE & POP.'],['mv','MV','Title track videos, newest first.'],['music-shows','Music Shows','Wins and stage performances.'],['variety','Variety Shows','Recent TV and web appearances.']].map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit"><h3>${x[1]}</h3><p class="muted small">${x[2]}</p></a>`).join('')}</div>`}
+
+let MF={q:'',f:'all'};
+function pMembers(){
+ setTimeout(()=>drawMembers(),0);
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>Members</h1><p>All 24, numbered in the order they were revealed. Colors are the commonly listed representative colors.</p></div>
+ <input type="search" id="mq" placeholder="Search by name or S number" aria-label="Search members" value="${esc(MF.q)}" style="margin-bottom:12px;max-width:420px">
+ <div class="chips" id="mchips">${[['all','All 24'],['moon','Moon'],['sun','Sun'],['neptune','Neptune'],['zenith','Zenith'],['jp','Japanese'],['kr','Korean'],['other','Chinese, Thai, Taiwanese-Vietnamese']].map(c=>`<button class="chip ${MF.f===c[0]?'on':''}" data-f="${c[0]}">${c[1]}</button>`).join('')}</div>
+ <div class="grid" id="mgrid"></div>`}
+function drawMembers(){const g=$('#mgrid');if(!g)return;
+ const q=MF.q.trim().toLowerCase();
+ const L=M.filter(m=>{if(q&&!(m.name+' '+m.full+' s'+m.n).toLowerCase().includes(q))return false;
+  if(['moon','sun','neptune','zenith'].includes(MF.f))return m.unit===MF.f;
+  if(MF.f==='jp')return m.nat==='Japanese';if(MF.f==='kr')return m.nat==='Korean';
+  if(MF.f==='other')return !['Japanese','Korean'].includes(m.nat);return true});
+ g.innerHTML=L.length?L.map(m=>`<article class="card stack">
+  <div style="display:flex;gap:12px;align-items:center">${av(m,64)}<div style="min-width:0"><div class="mono small muted">S${m.n}</div><h3>${esc(m.name)}</h3><div class="small muted">${esc(m.full)}</div></div></div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap">${unitPill(m)}<span class="pill"><i class="dot" style="background:${m.c}"></i>${esc(m.cn)}</span></div>
+  <div class="small muted">${esc(m.nat)}${m.bd?' · Born '+fd(m.bd):''}</div></article>`).join(''):'<p class="muted">No members match that search.</p>'}
+
+function pUnits(){
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>tripleS Units</h1><p>Units are the rotating teams the fans vote into existence, called Dimensions. The four msnz units debuted together on Nov 24, 2025 with the EP Beyond Beauty, six members each.</p></div>
+ <h2 style="margin-bottom:14px">msnz</h2>
+ <div class="grid wide">${UN.map(u=>{const ms=M.filter(m=>m.unit===u.id);return `<article class="card stack" style="border-top:4px solid ${u.col}">
+  <div><h3>${u.name}</h3><div class="small muted">Lead track: ${esc(u.track)}</div></div>
+  <div class="small">Leader: <b>${esc(ms.find(m=>m.lead).name)}</b></div>
+  <div class="avs">${ms.map(m=>`<span title="${esc(m.name)}" style="text-align:center;font-size:.7rem">${av(m,44)}<br>${esc(m.name)}</span>`).join('')}</div></article>`}).join('')}</div>
+ <h2 style="margin:34px 0 14px">Earlier units</h2>
+ <div class="grid wide">${[...OLD].reverse().map(o=>`<article class="card stack">
+  <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h3>${esc(o.name)}</h3><span class="pill">${esc(o.st)}</span></div>
+  <div class="small muted">${fd(o.date)} · ${esc(o.rel)}<br>Title: ${esc(o.track)}</div>
+  ${o.mem.length?`<div class="avs">${o.mem.map(n=>`<span title="${esc(MB(n).name)}">${av(MB(n),34)}</span>`).join('')}</div><div class="small muted">${o.mem.map(n=>MB(n).name).join(', ')}</div>`:'<div class="small muted">Eight members. Lineup not listed here.</div>'}</article>`).join('')}</div>`}
+
+function pEra(){
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>Era OT24</h1><p>Every release since all 24 members debuted together on May 8, 2024. Sales figures are first-week numbers reported by Korean and fan media.</p></div>
+ <div class="tl">${[...ERAS].reverse().map(e=>`<div class="it"><div class="when">${fd(e.date)}</div><article class="card stack">
+  <h2>${esc(e.name)}</h2><div class="small"><b>Lead:</b> ${esc(e.lead)}</div><p class="muted">${esc(e.blurb)}</p>
+  <div><span class="eyebrow">${e.partial?'Known tracks':'Tracklist'}</span><ol class="tracks">${e.songs.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div></article></div>`).join('')}
+  <div class="it"><div class="when">${fd('2023-02-13')}</div><article class="card flat stack"><h3>Before OT24: ASSEMBLE</h3><p class="muted small">The debut EP with title track Rising, released by the first ten members on Feb 13, 2023.</p></article></div></div>
+ <p class="note" style="margin-top:20px">Tour notes: the OT24 concert run My Secret New Zone visited Taipei on Jan 28 and Mar 1, 2026. Andless in Tokyo ended Oct 31, 2026 and the North American leg began in Toronto on Nov 11.</p>`}
+
+function pMV(){
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>MV</h1><p>Title track videos, newest first. ${EMBED?'Press Play to watch here.':'Links open the official video on YouTube in a new tab.'}</p></div>
+ <div class="note" style="margin-bottom:16px">The four msnz lead videos passed 20 million views by early December 2025, and Baby Flower passed 30 million views in its first weeks.</div>
+ <div class="grid wide">${[...MV].reverse().map(v=>`<article class="card stack"><div class="frame" style="background:${grad(v.mem)};color:${'#fff'};text-shadow:0 1px 4px rgba(0,0,0,.6)">${PH['mv:'+v.id]?`<img src="${PH['mv:'+v.id]}" alt="">`:esc(v.t)}</div>
+  <div><h3>${esc(v.t)}</h3><div class="small muted">${esc(v.u)} · ${fd(v.d)}</div><div class="small muted">${esc(v.era)}</div></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">${EMBED&&YT[v.id]?`<button class="btn primary" data-play="${YT[v.id]}" data-t="${esc(v.t)}">Play</button>`:''}<a class="small" target="_blank" rel="noopener" href="${YT[v.id]?'https://www.youtube.com/watch?v='+YT[v.id]:'https://www.youtube.com/results?search_query='+encodeURIComponent('tripleS '+v.t+' MV')}">${YT[v.id]?'Watch on YouTube':'Search on YouTube'}</a></div></article>`).join('')}</div>`}
+
+function pShows(){
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>Music Show Performances</h1><p>Trophies and stages from the Baby Flower promotions.</p></div>
+ <h2 style="margin-bottom:12px">Wins</h2><div class="card tbl"><table><thead><tr><th>Date</th><th>Show</th><th>Song</th><th>Points</th><th>Notes</th></tr></thead><tbody>${SHOWS.map(s=>`<tr><td class="mono">${fd(s.d)}</td><td>${esc(s.show)}</td><td>${esc(s.song)}</td><td class="mono">${s.pts}</td><td>${esc(s.note)}</td></tr>`).join('')}</tbody></table></div>
+ <h2 style="margin:30px 0 12px">Stages</h2><div class="tl">${[...PERF].reverse().map(p=>`<div class="it"><div class="when">${fd(p.d)}</div><div class="card"><h3>${esc(p.show)}</h3><p class="muted small">${esc(p.what)}</p></div></div>`).join('')}</div>
+ <p class="note" style="margin-top:20px">Win counts follow KProfiles’ June 2026 list and may differ from other trackers.</p>`}
+
+function pVariety(){
+ return `<div class="page-head"><span class="eyebrow">Fan App</span><h1>Variety Shows</h1><p>Recent TV and web appearances by the group and individual members. Schedules change quickly, so check the official channels for the latest.</p></div>
+ <div class="grid wide">${VAR.map(v=>`<article class="card stack"><span class="mono small muted">${v.d==='earlier'?'Earlier':fd(v.d)}</span><h3>${esc(v.show)}</h3><div class="small"><b>${esc(v.who)}</b></div><p class="muted small">${esc(v.what)}</p></article>`).join('')}</div>`}
+
+/* ---------- game hub ---------- */
+const GAMES=[
+ ['g-facts','Member Facts','Ten questions about the members.','facts'],
+ ['g-slide','SlideSSS','Sort a 5x5 sliding puzzle from S1 to S24.','slide'],
+ ['g-match4','Match 4','Crack a hidden sequence of four members.','match4'],
+ ['g-finds','Find S','Spot the member in a growing wall. 60 seconds.','finds'],
+ ['g-whowho','Who Who','Who is in the photo? Four options.','whowho'],
+ ['g-mvquiz','MV Quiz','Ten music video questions, a fresh set every round.','mvquiz'],
+ ['g-sorting','Sorting SSS','Which msnz unit is she in?','sorting'],
+ ['g-color','Member Color','Official colors, plus a color quiz.','color'],
+ ['g-song','Song Quiz','Which song belongs to which album?','song'],
+ ['g-reveal','Reveal','Clues until you guess the member.','reveal']];
+function bestText(id){const b=LS.get('best-'+id,null);return b==null?'':(id==='slide'?`Best: ${b} moves`:id==='reveal'?`Best: ${b} pts`:`Best: ${b}`)}
+function pGames(){
+ return `<section class="hero"><span class="eyebrow">Game Hub</span><h1>How well do you know S1 to S24?</h1><p class="lead">Ten mini games. Scores and best results are saved in this browser only.</p></section>
+ <div class="grid">${GAMES.map((g,i)=>`<a class="card gcard" href="#${g[0]}"><div class="ico" aria-hidden="true">${[0,1,2,3,4,5].map(k=>`<i style="background:${M[(i*5+k*3)%24].c}"></i>`).join('')}</div><h3>${g[1]}</h3><p class="muted small">${g[2]}</p><span class="mono small muted">${bestText(g[3])}</span></a>`).join('')}
+  <a class="card gcard" href="#photos"><div class="ico" aria-hidden="true" style="background:var(--surface2);align-items:center;justify-content:center;font-family:var(--font-m);color:var(--muted)">+ photos</div><h3>Photo Studio</h3><p class="muted small">Add your own member photos and MV frames to Who Who, Find S and MV Quiz.</p></a></div>`}
+
+const gHead=(t,d)=>`<div class="page-head"><span class="eyebrow">Game Hub</span><h1>${t}</h1><p>${d}</p></div>`;
+const hasPhotos=()=>M.some(m=>PH['m'+m.n]);
+
+/* generic multiple-choice engine */
+let Q=null;
+function startQuiz(id,gen){Q={id,qs:gen(),i:0,score:0,pick:null,gen};drawQ()}
+function drawQ(){const G=$('#game');if(!G||!Q)return;
+ if(Q.i>=Q.qs.length){const k='best-'+Q.id,b=LS.get(k,0);if(Q.score>b)LS.set(k,Q.score);
+  G.innerHTML=`<div class="card stack" style="text-align:center;justify-items:center"><span class="eyebrow">Round complete</span><h2>${Q.score} / ${Q.qs.length}</h2><p class="muted">${Q.score===Q.qs.length?'Perfect round.':Q.score>=7?'Strong round.':'Keep going, every S has a story.'} Best: ${Math.max(b,Q.score)}</p><button class="btn primary" data-again>Play again with new questions</button></div>`;return}
+ const q=Q.qs[Q.i],p=Q.pick;
+ G.innerHTML=`<div class="card"><div class="scorebar"><span class="mono small muted">Question ${Q.i+1} of ${Q.qs.length}</span><span class="mono small">Score ${Q.score}</span></div>
+ <div class="prompt">${q.p}</div>${q.media?`<div class="media">${q.media}</div>`:''}
+ <div class="opts" role="group">${q.o.map((o,i)=>`<button class="opt ${p!=null?(i===q.c?'ok':(i===p?'no':'')):''}" data-opt="${i}" ${p!=null?'disabled':''}>${o}</button>`).join('')}</div>
+ ${p!=null?`<div class="fb" role="status"><b>${p===q.c?'Correct.':'Not quite.'}</b> ${q.ex||''}</div><div style="margin-top:12px"><button class="btn primary" data-next>${Q.i+1===Q.qs.length?'See results':'Next question'}</button></div>`:''}</div>`}
+const mcN=(c,pool,fmt=x=>esc(x.name))=>{const o=shuffle([c,...pool.slice(0,3)]);return{o:o.map(fmt),c:o.indexOf(c)}};
+const othersOf=(m,pred=()=>true)=>shuffle(M.filter(x=>x!==m&&pred(x)));
+function build10(gens){const out=[],seen=new Set();let guard=0;
+ while(out.length<10&&guard++<400){const q=rnd(gens)();if(q&&!seen.has(q.p)){seen.add(q.p);out.push(q)}}return out}
+
+/* Member Facts */
+function genFacts(){return build10([
+ ()=>{const m=rnd(M);return{p:`Who is <b>S${m.n}</b>?`,...mcN(m,othersOf(m)),ex:`S${m.n} is ${esc(m.full)}.`}},
+ ()=>{const m=rnd(M.filter(x=>x.bd));return{p:`Which member was born on <b>${fd(m.bd)}</b>?`,...mcN(m,othersOf(m)),ex:`${esc(m.name)} was born ${fd(m.bd)}.`}},
+ ()=>{const m=rnd(M.filter(x=>x.nat==='Japanese'));return{p:'Which of these members is <b>Japanese</b>?',...mcN(m,othersOf(m,x=>x.nat!=='Japanese')),ex:'Kaede, Kotone, Mayu and Lynn are the Japanese members.'}},
+ ()=>{const u=rnd(UN),m=M.find(x=>x.unit===u.id&&x.lead);return{p:`Who leads msnz <b>${u.name}</b>?`,...mcN(m,othersOf(m)),ex:`${esc(m.name)} leads ${u.name}.`}},
+ ()=>{const m=rnd(M);return{p:`Which member’s official color is <b>${esc(m.cn)}</b>?`,...mcN(m,othersOf(m)),ex:`${esc(m.name)} is listed with ${esc(m.cn)}.`}},
+ ()=>{const m=rnd(M),w=shuffle([...Array(24).keys()].map(i=>i+1).filter(i=>i!==m.n)).slice(0,3),o=shuffle([m.n,...w]);return{p:`What is <b>${esc(m.name)}</b>’s S number?`,o:o.map(n=>'S'+n),c:o.indexOf(m.n),ex:`${esc(m.name)} is S${m.n}.`}},
+ ()=>{const pool=shuffle(M.filter(x=>x.bd)).slice(0,4),c=pool.reduce((a,b)=>a.bd<b.bd?a:b);return{p:'Which of these members is the <b>oldest</b>?',o:pool.map(x=>esc(x.name)),c:pool.indexOf(c),ex:`${esc(c.name)} was born ${fd(c.bd)}.`}},
+ ()=>{const pool=shuffle(M.filter(x=>x.bd)).slice(0,4),c=pool.reduce((a,b)=>a.bd>b.bd?a:b);return{p:'Which of these members is the <b>youngest</b>?',o:pool.map(x=>esc(x.name)),c:pool.indexOf(c),ex:`${esc(c.name)} was born ${fd(c.bd)}.`}},
+ ()=>{const f=rnd([[22,'Thai'],[15,'Chinese'],[13,'Taiwanese-Vietnamese']]),m=MB(f[0]);return{p:`Which member is <b>${f[1]}</b>?`,...mcN(m,othersOf(m)),ex:`${esc(m.name)} is ${f[1]}.`}},
+ ()=>{const o=shuffle(['4','5','6','8']);return{p:'How many members are in <b>each msnz unit</b>?',o,c:o.indexOf('6'),ex:'Moon, Sun, Neptune and Zenith have six members each.'}},
+ ()=>{const m=rnd([MB(1),MB(24)]);return{p:m.n===1?'Who was the <b>first</b> member revealed?':'Who is the <b>24th and final</b> member?',...mcN(m,othersOf(m)),ex:`${esc(m.name)} is S${m.n}.`}}])}
+
+/* Who Who */
+function genWho(){return shuffle(M).slice(0,10).map(m=>({p:'Who is in this photo?',media:PH['m'+m.n]?av(m,180):`<div style="text-align:center">${av(m,150)}<div class="small muted" style="margin-top:8px">No photo added. Hint: official color ${esc(m.cn)}.</div></div>`,...mcN(m,othersOf(m)),ex:`That is ${esc(m.name)} (S${m.n}).`}))}
+
+/* MV Quiz */
+function genMV(){const per=shuffle(MV).slice(0,10);return per.map(v=>{const mem=v.mem===null?'All 24 members':(v.mem.length?v.mem.map(n=>MB(n).name).join(', '):'');
+ const others=shuffle(MV.filter(x=>x!==v)).slice(0,3),o=shuffle([v,...others]);
+ return{p:'Which music video is this?',media:`<div style="display:grid;gap:10px;justify-items:center;width:100%"><div class="frame" style="background:${grad(v.mem)}">${PH['mv:'+v.id]?`<img src="${PH['mv:'+v.id]}" alt="">`:'MV frame · colors of the featured members'}</div><div class="small muted" style="text-align:center;max-width:52ch">Clue: ${esc(v.u)}, ${fd(v.d)}, from ${esc(v.era)}.${mem?' Members: '+esc(mem)+'.':''}</div></div>`,o:o.map(x=>esc(x.t)),c:o.indexOf(v),ex:`${esc(v.t)} by ${esc(v.u)}, ${fd(v.d)}.`}})}
+
+/* Sorting SSS */
+function genSort(){return shuffle(M).slice(0,10).map(m=>({p:`<b>${esc(m.name)}</b> is in which msnz unit?`,media:av(m,96),o:UN.map(u=>u.name),c:UN.indexOf(unitOf(m)),ex:`${esc(m.name)} is in ${unitOf(m).name}${m.lead?' and leads it':''}.`}))}
+
+/* Member Color */
+function genColor(){return shuffle(M).slice(0,10).map(m=>({p:'Whose official color is this?',media:`<div class="swatch" style="background:${m.c}"></div>`,...mcN(m,othersOf(m)),ex:`${esc(m.cn)} (${m.c}) belongs to ${esc(m.name)}.`}))}
+
+/* Song Quiz */
+const ALB=[
+ {n:'ASSEMBLE24',y:'May 2024',s:['S','Girls Never Die','Heart Raider','Midnight Flower','White Soul Sneakers','Chiyu','24','Beyond the Beyond','Non Scale','Dimension']},
+ {n:'ASSEMBLE25',y:'May 2025',s:['@% (Alpha Percent)','Are You Alive','Detective Soseol','Firework Diary','Love Child','Persona','Too Hot','Diablo','Friend Zone','Love2Love']},
+ {n:'Beyond Beauty (msnz)',y:'Nov 2025',s:['Magic Shine New Zone','Fly Up','Cameo Love','Bubble Gum Girl','Q&A','Christmas Alone']},
+ {n:'ASSEMBLE26 LOVE & POP Part 1',y:'Jun 2026',s:['Baby Flower','Sleek',"Sad Girls Schemin'"]}];
+function genSong(){const out=[],used=new Set();let g=0;
+ while(out.length<10&&g++<300){const a=rnd(ALB),s=rnd(a.s);if(used.has(s))continue;used.add(s);
+  const pool=shuffle(ALB.filter(x=>x!==a).flatMap(x=>x.s)).slice(0,3),o=shuffle([s,...pool]);
+  out.push({p:`Which of these songs is from <b>${esc(a.n)}</b>?`,o:o.map(esc),c:o.indexOf(s),ex:`${esc(s)} is from ${esc(a.n)} (${a.y}).`})}
+ return out}
+
+const mkQuizPage=(t,d,id,gen)=>{setTimeout(()=>startQuiz(id,gen),0);return gHead(t,d)+'<div id="game"></div>'};
+function pFacts(){return mkQuizPage('Member Facts','Ten questions about the members. Every round is a fresh mix.','facts',genFacts)}
+function pWho(){return mkQuizPage('Who Who','Who is the member in the photo? Pick one of four.','whowho',genWho)+`<p class="note" style="margin-top:14px">${hasPhotos()?'Using your photos from the Photo Studio.':'Add your own photos in the <a href="#photos">Photo Studio</a> to turn this into the real thing. Without photos you get a color avatar and a hint.'}</p>`}
+function pMVQ(){return mkQuizPage('MV Quiz','Ten music video questions. Play again for a new set.','mvquiz',genMV)+`<p class="note" style="margin-top:14px">Frames show the featured members’ colors with a clue. Add your own screenshots in the <a href="#photos">Photo Studio</a>.</p>`}
+function pSort(){return mkQuizPage('Sorting SSS','Which msnz unit is she in: Moon, Sun, Neptune or Zenith?','sorting',genSort)}
+function pSong(){return mkQuizPage('Song Quiz','Four songs appear. Pick the one that belongs to the album.','song',genSong)}
+function pColor(){
+ setTimeout(()=>startQuiz('color',genColor),0);
+ return gHead('Member Color','The official representative colors of all 24 members, then a color quiz.')+`<div class="shelf" style="margin-bottom:26px">${M.map(m=>`<div class="card"><div class="sw" style="background:${m.c}"></div><b>${esc(m.name)}</b><span class="mono small muted">S${m.n} · ${esc(m.cn)}</span></div>`).join('')}</div><h2 style="margin-bottom:12px">Color quiz</h2><div id="game"></div><p class="note" style="margin-top:14px">Fan wikis disagree on a few colors (for example YooYeon, SooMin, HaYeon and JiYeon). This hub uses the most commonly listed value.</p>`}
+
+/* SlideSSS */
+let SL=null;
+function slInit(){const b=[...Array(24).keys()].map(i=>i+1).concat(0);let z=24,last=-1;
+ for(let k=0;k<400;k++){const r=Math.floor(z/5),c=z%5,nb=[];if(r>0)nb.push(z-5);if(r<4)nb.push(z+5);if(c>0)nb.push(z-1);if(c<4)nb.push(z+1);
+  const ch=rnd(nb.filter(x=>x!==last).length?nb.filter(x=>x!==last):nb);b[z]=b[ch];b[ch]=0;last=z;z=ch}
+ if(b.every((v,i)=>v===(i+1)%25))return slInit();
+ SL={b,moves:0,t0:null,time:0,won:false};stopTimer();slDraw()}
+function slSolved(b){for(let i=0;i<24;i++)if(b[i]!==i+1)return false;return b[24]===0}
+function slMove(i){if(SL.won)return;const b=SL.b,z=b.indexOf(0),ri=Math.floor(i/5),ci=i%5,rz=Math.floor(z/5),cz=z%5;
+ if(i===z||(ri!==rz&&ci!==cz))return;
+ const step=ri===rz?(i<z?1:-1):(i<z?5:-5);let p=z;while(p!==i){b[p]=b[p-step];p-=step}b[i]=0;SL.moves++;
+ if(!SL.t0){SL.t0=Date.now();TM=setInterval(()=>{SL.time=Math.floor((Date.now()-SL.t0)/1000);const e=$('#slT');if(e)e.textContent=SL.time+'s'},500)}
+ if(slSolved(b)){SL.won=true;stopTimer();SL.time=Math.floor((Date.now()-SL.t0)/1000);const bst=LS.get('best-slide',null);if(bst==null||SL.moves<bst)LS.set('best-slide',SL.moves)}
+ slDraw()}
+function slDraw(){const G=$('#game');if(!G)return;
+ G.innerHTML=`<div class="card"><div class="scorebar"><span class="mono">Moves ${SL.moves}</span><span class="mono" id="slT">${SL.time}s</span><span class="mono small muted">${bestText('slide')}</span></div>
+ <div class="board" role="grid">${SL.b.map((v,i)=>v?`<button class="tile" data-tile="${i}" style="background:${MB(v).c};color:${ink(MB(v).c)}" aria-label="S${v}">S${v}<small>${esc(MB(v).name)}</small></button>`:`<div class="tile blank"></div>`).join('')}</div>
+ ${SL.won?`<div class="fb" role="status"><b>Solved in ${SL.moves} moves and ${SL.time} seconds.</b> S1 to S24 are all in order.</div>`:`<p class="small muted" style="margin-top:12px;text-align:center">Tap a tile in the same row or column as the gap to slide it. Put S1 to S24 in order, with the gap last.</p>`}
+ <div style="text-align:center;margin-top:12px"><button class="btn primary" data-slnew>New shuffle</button></div></div>`}
+function pSlide(){setTimeout(slInit,0);return gHead('SlideSSS','A 5x5 sliding puzzle with S1 to S24 and one gap. Put every member in order. A step up from the S1-S8 and S1-S15 puzzles.')+'<div id="game"></div>'}
+
+/* Match 4 */
+let MM=null;
+function m4Init(){const pool=shuffle(M).slice(0,8);MM={pool,secret:shuffle(pool).slice(0,4),cur:[],hist:[],over:false,win:false};m4Draw()}
+function m4Fb(g,s){let b=0,w=0;g.forEach((x,i)=>{if(x===s[i])b++;else if(s.includes(x))w++});return{b,w}}
+function m4Draw(){const G=$('#game');if(!G)return;
+ const pegs=h=>{const a=[...Array(h.b).fill('b'),...Array(h.w).fill('w')];while(a.length<4)a.push('');return a.map(c=>`<span class="peg ${c}"></span>`).join('')};
+ G.innerHTML=`<div class="cols"><div class="card stack"><div class="scorebar" style="margin:0"><b>Candidates</b><span class="mono small muted">${MM.hist.length} / 10 guesses</span></div>
+  <div class="avs" style="gap:8px">${MM.pool.map((m,i)=>`<button class="cand" data-cand="${i}" ${MM.cur.includes(m.n)||MM.over?'disabled':''}>${av(m,40)}${esc(m.name)}</button>`).join('')}</div>
+  <b style="margin-top:6px">Your guess</b><div class="slots">${[0,1,2,3].map(i=>MM.cur[i]?`<button class="slot f" data-slot="${i}" aria-label="Remove ${esc(MB(MM.cur[i]).name)}">${av(MB(MM.cur[i]),46)}</button>`:`<span class="slot"></span>`).join('')}</div>
+  <div><button class="btn primary" data-m4go ${MM.cur.length<4||MM.over?'disabled':''}>Submit guess</button> <button class="btn" data-m4new>New game</button></div>
+  <p class="small muted">Four different members, in order. Black peg: right member, right position. White peg: right member, wrong position.</p>
+  ${MM.over?`<div class="fb" role="status"><b>${MM.win?'You cracked it in '+MM.hist.length+' guesses.':'Out of guesses.'}</b> The sequence was ${MM.secret.map(n=>esc(MB(n).name)).join(', ')}.</div>`:''}</div>
+ <div class="card"><b>History</b>${MM.hist.length?MM.hist.map((h,i)=>`<div class="hist"><span class="mono small muted">${i+1}</span>${h.g.map(n=>av(MB(n),34)).join('')}<span class="pegs">${pegs(h.f)}</span></div>`).join(''):'<p class="muted small" style="margin-top:8px">Your guesses appear here.</p>'}</div></div>`}
+function pM4(){setTimeout(m4Init,0);return gHead('Match 4','Find the four hidden members as a sequence. Each guess gets black and white peg feedback.')+'<div id="game"></div>'}
+
+/* Find S */
+let FS=null;
+function fsAvatars(){return FS.tiles.map((m,i)=>`<button data-ft="${i}" aria-label="Member">${av(m,60)}</button>`).join('')}
+function fsWall(){const lvl=FS.lvl,cnt=Math.min(8+4*(lvl-1),88),t=rnd(M);FS.target=t;
+ FS.tiles=shuffle([t,...Array.from({length:cnt-1},()=>rnd(M.filter(x=>x!==t)))])}
+function fsDraw(){const G=$('#game');if(!G)return;
+ if(!FS.run){const b=LS.get('best-finds',0);
+  G.innerHTML=`<div class="card stack" style="text-align:center;justify-items:center">${FS.over?`<span class="eyebrow">Time</span><h2>${FS.found} found</h2><p class="muted">Best: ${b}</p>`:'<h2>Ready?</h2><p class="muted" style="max-width:48ch">A member is hiding on the wall. Find as many as you can in 60 seconds. Every correct tap adds more members to the wall. A wrong tap costs 3 seconds.</p>'}<button class="btn primary" data-fsgo>${FS.over?'Play again':'Start'}</button></div>`;return}
+ G.innerHTML=`<div class="card"><div class="scorebar"><div style="display:flex;gap:10px;align-items:center">${av(FS.target,52)}<div><div class="small muted">Find</div><b>${esc(FS.target.name)}</b></div></div><span class="mono">Found ${FS.found}</span><span class="timer" id="fsT">${Math.ceil(FS.time)}</span></div><div class="wall" id="wall">${fsAvatars()}</div></div>`}
+function fsStart(){FS={run:true,over:false,found:0,lvl:1,time:60};fsWall();stopTimer();TM=setInterval(fsTick,100);fsDraw()}
+function fsTick(){FS.time-=.1;const e=$('#fsT');if(e){e.textContent=Math.max(0,Math.ceil(FS.time));e.classList.toggle('low',FS.time<=10)}if(FS.time<=0)fsEnd()}
+function fsEnd(){stopTimer();FS.run=false;FS.over=true;const b=LS.get('best-finds',0);if(FS.found>b)LS.set('best-finds',FS.found);fsDraw()}
+function pFind(){FS={run:false,over:false,found:0,lvl:1,time:60};setTimeout(fsDraw,0);return gHead('Find S','A member is hiding on the photo wall. Find as many as you can in 60 seconds. Wrong taps cost 3 seconds, and each correct answer makes the wall bigger.')+'<div id="game"></div>'+`<p class="note" style="margin-top:14px">${hasPhotos()?'Using your photos from the Photo Studio.':'The wall uses color avatars. Add photos in the <a href="#photos">Photo Studio</a> for a real photo wall.'}</p>`}
+
+/* Reveal */
+let RV=null;
+const nrm=s=>s.toLowerCase().replace(/[^a-z]/g,'');
+function cluesOf(m){const u=unitOf(m);return[
+ m.bd?`Born in <b>${m.bd.slice(0,4)}</b>.`:'One of the <b>final four members</b>, revealed in April 2024.',
+ `Her official color is <b>${esc(m.cn)}</b> <i class="dot" style="background:${m.c}"></i>.`,
+ `In msnz she is in <b>${u.name}</b>${m.lead?' and she is the leader':''}.`,
+ `Nationality: <b>${esc(m.nat)}</b>.`,
+ `She is <b>S${m.n}</b>, the ${m.n}${m.n%10===1&&m.n!==11?'st':m.n%10===2&&m.n!==12?'nd':m.n%10===3&&m.n!==13?'rd':'th'} member revealed.`]}
+function rvInit(){RV={order:shuffle(M),i:0,k:1,score:0,msg:'',done:false,solved:false,reveal:false};rvDraw()}
+function rvDraw(){const G=$('#game');if(!G)return;
+ if(RV.done){const b=LS.get('best-reveal',0);if(RV.score>b)LS.set('best-reveal',RV.score);
+  G.innerHTML=`<div class="card stack" style="text-align:center;justify-items:center"><span class="eyebrow">All 24 done</span><h2>${RV.score} / 120 points</h2><p class="muted">Best: ${Math.max(b,RV.score)}</p><button class="btn primary" data-rvnew>Play again in a new order</button></div>`;return}
+ const m=RV.order[RV.i],cl=cluesOf(m);
+ G.innerHTML=`<div class="card stack"><div class="scorebar" style="margin:0"><span class="mono small muted">Member ${RV.i+1} of 24</span><span class="mono small">Points ${RV.score}</span></div>
+ <div class="stack">${cl.slice(0,RV.k).map((c,i)=>`<div class="clue"><b>CLUE ${i+1}</b><span>${c}</span></div>`).join('')}</div>
+ ${RV.solved||RV.reveal?`<div class="fb" role="status"><div style="display:flex;gap:12px;align-items:center">${av(m,56)}<div><b>${RV.solved?'Correct':'It was'} ${esc(m.name)}</b> (${esc(m.full)})<br><span class="small muted">${RV.msg}</span></div></div></div><div><button class="btn primary" data-rvnext>${RV.i===23?'Finish':'Next member'}</button></div>`
+ :`<form id="rvf" class="stack" autocomplete="off"><label for="rvin" class="small muted">Who is she? First try is worth 5 points, and each extra clue lowers it.</label><div style="display:flex;gap:8px"><input type="text" id="rvin" list="rvl" placeholder="Type a member name" aria-label="Member name"><button class="btn primary" type="submit">Guess</button></div><datalist id="rvl">${M.map(x=>`<option value="${esc(x.name)}">`).join('')}</datalist>${RV.msg?`<div class="small" style="color:var(--bad)" role="alert">${RV.msg}</div>`:''}</form>`}</div>`}
+function rvGuess(v){const m=RV.order[RV.i],g=nrm(v);if(!g)return;
+ if(g===nrm(m.name)||g===nrm(m.full)){const pts=Math.max(5-(RV.k-1),1);RV.score+=pts;RV.solved=true;RV.msg=`+${pts} point${pts>1?'s':''}${RV.k===1?' for getting it on the first try':''}.`}
+ else if(RV.k>=5){RV.reveal=true;RV.msg='No points this time.'}
+ else{RV.k++;RV.msg='Not her. Here is another clue.'}
+ rvDraw();const i=$('#rvin');if(i)i.focus()}
+function pReveal(){setTimeout(rvInit,0);return gHead('Reveal','A clue about a member. Guess right on the first try and move on. Guess wrong and you get another clue before you can continue. All 24 members, in random order.')+'<div id="game"></div>'}
+
+/* Photo Studio */
+function pPhotos(){
+ return gHead('Photo Studio','Add your own member photos and MV frames. They stay in this browser only and are never uploaded. Use images you have the right to use.')+
+ `<div class="note" style="margin-bottom:16px">Photos power Who Who and Find S. MV frames show up in MV Quiz and on the MV page.</div>
+ <div style="margin-bottom:14px"><button class="btn" data-phclear>Remove all photos</button> <span id="phmsg" class="small muted" role="status"></span></div>
+ <h2 style="margin-bottom:12px">Members</h2><div class="shelf">${M.map(m=>`<div class="card up"><span id="pv-m${m.n}">${av(m,72)}</span><b>S${m.n} ${esc(m.name)}</b><input type="file" accept="image/*" data-ph="m${m.n}" aria-label="Photo for ${esc(m.name)}"></div>`).join('')}</div>
+ <h2 style="margin:28px 0 12px">MV frames</h2><div class="shelf">${MV.map(v=>`<div class="card up"><div class="frame" id="pv-mv${v.id}" style="background:${grad(v.mem)}">${PH['mv:'+v.id]?`<img src="${PH['mv:'+v.id]}" alt="">`:''}</div><b>${esc(v.t)}</b><input type="file" accept="image/*" data-ph="mv:${v.id}" aria-label="Frame for ${esc(v.t)}"></div>`).join('')}</div>`}
+function phSave(key,file){const msg=$('#phmsg');const fr=new FileReader();
+ fr.onload=()=>{const im=new Image();im.onload=()=>{const mv=key.startsWith('mv:'),W=mv?480:200,H=mv?270:200,c=document.createElement('canvas');c.width=W;c.height=H;
+  const s=Math.max(W/im.width,H/im.height),w=im.width*s,h=im.height*s;c.getContext('2d').drawImage(im,(W-w)/2,(H-h)/2,w,h);
+  PH[key]=c.toDataURL('image/jpeg',.8);const ok=LS.set('sssPhotos',PH);if(msg)msg.textContent=ok?'Saved in this browser.':'Browser storage is full or blocked. The photo works until you leave this page.';
+  const id=key.startsWith('mv:')?'pv-mv'+key.slice(3):'pv-'+key;const el=document.getElementById(id);
+  if(el){if(mv)el.innerHTML=`<img src="${PH[key]}" alt="">`;else el.innerHTML=av(MB(+key.slice(1)),72)}};im.src=fr.result};
+ fr.readAsDataURL(file)}
+
+/* ---------- router ---------- */
+const R={
+ home:['fan','Home',pHome],members:['fan','Members',pMembers],units:['fan','Units',pUnits],'era-ot24':['fan','Era OT24',pEra],mv:['fan','MV',pMV],'music-shows':['fan','Music Shows',pShows],variety:['fan','Variety Shows',pVariety],
+ games:['game','Hub',pGames],'g-facts':['game','Member Facts',pFacts],'g-slide':['game','SlideSSS',pSlide],'g-match4':['game','Match 4',pM4],'g-finds':['game','Find S',pFind],'g-whowho':['game','Who Who',pWho],'g-mvquiz':['game','MV Quiz',pMVQ],'g-sorting':['game','Sorting SSS',pSort],'g-color':['game','Member Color',pColor],'g-song':['game','Song Quiz',pSong],'g-reveal':['game','Reveal',pReveal],photos:['game','Photos',pPhotos]};
+function route(){stopTimer();Q=null;{const mo=$('#modal');if(mo&&!mo.hidden)closeModal()}const name=(location.hash||'').slice(1),key=R[name]?name:'home',r=R[key];
+ $('#segFan').classList.toggle('on',r[0]==='fan');$('#segGames').classList.toggle('on',r[0]==='game');
+ $('#sub').innerHTML=Object.keys(R).filter(k=>R[k][0]===r[0]).map(k=>`<a href="#${k}" class="${k===key?'on':''}">${R[k][1]}</a>`).join('');
+ $('#view').innerHTML=r[2]();window.scrollTo(0,0)}
+
+function closeModal(){const m=$('#modal');m.hidden=true;m.innerHTML=''}
+function openModal(id,t){const m=$('#modal');m.hidden=false;
+ m.innerHTML=`<div class="box" role="dialog" aria-modal="true" aria-label="${esc(t)}"><div class="bar"><b>${esc(t)}</b><button class="btn" data-close>Close</button></div><div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${esc(t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div class="small">If the player says the video is unavailable, <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=${id}">open it on YouTube</a>.</div></div>`;
+ const c=$('#modal [data-close]');if(c)c.focus()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.addEventListener('click',e=>{const t=e.target.closest('button,[data-f]');
+ if(e.target.id==='modal'){closeModal();return}
+ if(!t)return;
+ if(t.dataset.play){openModal(t.dataset.play,t.dataset.t||'Music video');return}
+ if(t.hasAttribute('data-close')){closeModal();return}
+ if(t.dataset.f){MF.f=t.dataset.f;$$('#mchips .chip').forEach(c=>c.classList.toggle('on',c.dataset.f===MF.f));drawMembers();return}
+ if(t.dataset.opt!=null&&Q&&Q.pick==null){const q=Q.qs[Q.i];Q.pick=+t.dataset.opt;if(Q.pick===q.c)Q.score++;drawQ();return}
+ if(t.hasAttribute('data-next')&&Q){Q.i++;Q.pick=null;drawQ();return}
+ if(t.hasAttribute('data-again')&&Q){startQuiz(Q.id,Q.gen);return}
+ if(t.dataset.tile!=null&&SL){slMove(+t.dataset.tile);return}
+ if(t.hasAttribute('data-slnew')){slInit();return}
+ if(t.dataset.cand!=null&&MM&&!MM.over){const m=MM.pool[+t.dataset.cand];if(MM.cur.length<4&&!MM.cur.includes(m.n)){MM.cur.push(m.n);m4Draw()}return}
+ if(t.dataset.slot!=null&&MM){MM.cur.splice(+t.dataset.slot,1);m4Draw();return}
+ if(t.hasAttribute('data-m4go')&&MM&&MM.cur.length===4){const f=m4Fb(MM.cur,MM.secret);MM.hist.push({g:[...MM.cur],f});MM.cur=[];if(f.b===4){MM.over=true;MM.win=true}else if(MM.hist.length>=10)MM.over=true;m4Draw();return}
+ if(t.hasAttribute('data-m4new')){m4Init();return}
+ if(t.hasAttribute('data-fsgo')){fsStart();return}
+ if(t.dataset.ft!=null&&FS&&FS.run){const m=FS.tiles[+t.dataset.ft];
+  if(m===FS.target){FS.found++;FS.lvl++;fsWall();fsDraw()}else{FS.time-=3;const e2=$('#fsT');if(e2)e2.textContent=Math.max(0,Math.ceil(FS.time));t.classList.remove('bad');void t.offsetWidth;t.classList.add('bad');if(FS.time<=0)fsEnd()}return}
+ if(t.hasAttribute('data-rvnext')&&RV){RV.i++;if(RV.i>=24)RV.done=true;RV.k=1;RV.msg='';RV.solved=false;RV.reveal=false;rvDraw();return}
+ if(t.hasAttribute('data-rvnew')){rvInit();return}
+ if(t.hasAttribute('data-phclear')){PH={};LS.set('sssPhotos',{});route();return}});
+document.addEventListener('submit',e=>{if(e.target.id==='rvf'){e.preventDefault();rvGuess($('#rvin').value)}});
+document.addEventListener('input',e=>{if(e.target.id==='mq'){MF.q=e.target.value;drawMembers()}});
+document.addEventListener('change',e=>{const k=e.target.dataset&&e.target.dataset.ph;if(k&&e.target.files&&e.target.files[0])phSave(k,e.target.files[0])});
+window.addEventListener('hashchange',route);
+$('#spec').innerHTML=specHTML();
+route();
+</script>
